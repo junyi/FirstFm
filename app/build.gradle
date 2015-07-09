@@ -30,7 +30,10 @@ dependencies {
         butterknifeVersion = "7.0.1"
     }
 
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:support-annotations:$ext.androidSupportVersion"
     compile "com.android.support:appcompat-v7:$ext.androidSupportVersion"
     compile "com.android.support:support-v4:$ext.androidSupportVersion"
     compile "com.android.support:design:$ext.androidSupportVersion"
